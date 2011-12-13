@@ -1,7 +1,7 @@
 hibernate {
     driverClassName="javax.sql.DataSource"
 }
-// environment specific settings
+// environment specific settings cloudbees db
 environments {
     development {
         dataSource {
