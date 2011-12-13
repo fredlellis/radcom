@@ -5,22 +5,18 @@ hibernate {
 environments {
     development {
         dataSource {
-            dbCreate = "update"
-            url = "jdbc:hsqldb:mem:devDb"
-            pooled = true
-            driverClassName = "org.hsqldb.jdbcDriver"
-            username = "sa"
-            password = ""
+            dbCreate = "create-drop"
+            username="radcom_dsv"
+            password ="leoLellis"
+            url ="jdbc:cloudbees://radcom_DSV"
         }
     }
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:hsqldb:mem:testDb"
-            pooled = true
-            driverClassName = "org.hsqldb.jdbcDriver"
-            username = "sa"
-            password = ""
+            username="radcom_tst"
+            password ="leoLellis"
+            url ="jdbc:cloudbees://radcom_TST"
         }
     }
     production {
